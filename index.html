@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Amount</title>
+    <style>
+      #navbar{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgb(213, 208, 208); 
+      }
+      #add-money{
+        width: 25%;
+        height: 200px;
+       
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        border-radius: 15px;
+        margin: auto;
+        text-align: center;
+        margin-top: 10%;
+        padding-top: 5%;
+        box-sizing: border-box;
+      }
+      #amount{
+        margin-bottom: 30px;
+        border: 1px solid rgb(213, 208, 208) ;
+        border-radius: 5px;
+        font-size: 15px;
+        
+      }
+      #add_to_wallet,#book_movies
+      {
+        background-color: rgb(225, 219, 219);
+        border-radius: 3px;
+        
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <h1>Add Money to wallet</h1>
+      <h1 id="wallet">0</h1>
+      <!-- Display the wallet amount here inside h1 tag with id as "wallet". Note only amount, no extra text. Like 500 not Rs 500 -->
+    </div>
+    <div id="add-money">
+      <!-- input box for accepting money with id as "amount" -->
+      <!-- button with id as "add_to_wallet" -->
+      <!-- button with id as "book_movies" to go to movies.html -->
+      <input type="number" name="" id="amount" required placeholder="Add amount to walllet">
+      <br>
+      <button id="add_to_wallet" onclick="addAmount()">Add to wallet</button>
+      <button id="book_movies"onclick="bookMovies()" >Book movies</button>
+    </div>
+  </body>
+</html>
+<script src="/scripts/index.js"></script>
